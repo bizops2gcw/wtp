@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đang chuyển hướng...</title>
-  <script>
-    // Dán link Apps Script dạng /exec của anh vào giữa 2 dấu ngoặc kép bên dưới:
-    var targetUrl = "https://script.google.com/macros/s/AKfycbzF88Tin9NOSwNatIcBgCY8DpTshelXQqW7_Y-od50zWd9NGTM3EOkFVM3O7q6l5yOv/exec";
-
-    // Tự động làm sạch URL, loại bỏ hoàn toàn /u/4/, /u/0/ của Edge
-    window.location.replace(targetUrl);
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng của tôi</title>
+    <style>
+        /* Tối ưu hiển thị full màn hình, loại bỏ viền của iframe */
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+        iframe { width: 100%; height: 100%; border: none; }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding-top: 50px;">
-  <p>Đang tải ứng dụng, vui lòng đợi trong giây lát...</p>
+<body>
+
+    <!-- Thay LINK_WEB_APP_CỦA_BẠN bằng link lấy ở Bước 2 -->
+    <iframe src="https://script.google.com/macros/s/AKfycbzWRjRfG8HEP-mEgU6EpLXlOWWn_ONaizM5WTw-EYX_36T5oyKN4Qrhi9uCo0yCka-v/exec"></iframe>
+
 </body>
 </html>
