@@ -1,8 +1,22 @@
-<title>Đang chuyển hướng...</title>
-  <script>
-    // Dán link Apps Script dạng /exec của anh vào giữa 2 dấu ngoặc kép bên dưới:
-    var targetUrl = "https://script.google.com/macros/s/AKfycbzWRjRfG8HEP-mEgU6EpLXlOWWn_ONaizM5WTw-EYX_36T5oyKN4Qrhi9uCo0yCka-v/exec";
-    var targetUrl = "https://script.google.com/macros/s/AKfycbzWRjRfG8HEP-mEgU6EpLXlOWWn_ONaizM5WTw-EYX_36T5oyKN4Qrhi9uCo0yCka-v/exec";
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đang chuyển hướng...</title>
+  
+  <!-- Chuyển hướng dự phòng sau 1 giây nếu JavaScript bị tắt -->
+  <meta http-index="refresh" content="0;url=https://script.google.com/macros/s/AKfycbzWRjRfG8HEP-mEgU6EpLXlOWWn_ONaizM5WTw-EYX_36T5oyKN4Qrhi9uCo0yCka-v/exec">
 
-    // Tự động làm sạch URL, loại bỏ hoàn toàn /u/4/, /u/0/ của Edge
+  <script>
+    // Link Google Apps Script đích
+    const targetUrl = "https://script.google.com/macros/s/AKfycbzWRjRfG8HEP-mEgU6EpLXlOWWn_ONaizM5WTw-EYX_36T5oyKN4Qrhi9uCo0yCka-v/exec";
+
+    // Tự động chuyển hướng không lưu lại history (ngăn bấm back quay lại trang chờ)
     window.location.replace(targetUrl);
+  </script>
+</head>
+<body style="font-family: system-ui, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #f9f9f9; color: #333;">
+  <p>Đang chuyển hướng, vui lòng chờ trong giây lát...</p>
+</body>
+</html>
